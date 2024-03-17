@@ -1,0 +1,71 @@
+<table>
+  <thead>
+    <tr>
+      <th title="me">SYMBOL</th>
+      <th>LTP</th>
+      <th>Momentum</th>
+      <th>OPEN</th>
+      <th>TODAY'S RANGE</th>
+      <th>OHL</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for( el of data; track el.ltp){
+    <tr>
+      <td>
+        <div class="symbolMainContainer">
+          <div class="symbolCheckBox">
+            <input class="symbolCheckBoxInput" type="checkbox" name="" id="">
+          </div>
+          <div class="symbolLogoDiv">
+            <p>{{el.symbol[0]}}</p>
+          </div>
+          <div>
+            <div class="symbolBrandNameDiv">
+              {{el.symbol}}
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="symbolMainContainer">
+          <div>
+            <p class="symbolLTP">{{el.ltp}}</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="symbolMainContainer">
+          <div class="symbolMomentum">
+            <p>
+              {{el.stockMomentumRank}}
+            </p>
+          </div>
+          <div  class="symbolMomentum">
+            <p>
+              {{el.stockOutperformanceRank}}
+            </p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="symbolMainContainer">
+          <p>{{el.open}}</p>
+        </div>
+      </td>
+      <td>
+        <div class="symbolMainContainer">
+          <div>
+            <p class="symbolLTP">{{el.open}} - {{el.high}}</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="symbolMainContainer">
+          <p  class="symbolMomentum">{{el.openHighLowSignal}}</p>
+        </div>
+      </td>
+    </tr>
+    }
+  </tbody>
+</table>

@@ -1,0 +1,64 @@
+table {
+  width: 100%;
+  border-radius: 20px;
+}
+
+th,
+td {
+  border-bottom: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+.symbolMainContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.symbolLogoDiv{
+  background-color: rgb(82, 76, 76);
+  color: white;
+  font-weight: bold;
+  padding: 0.7rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.symbolBrandNameDiv{
+  color: blue;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.symbolBrandNameBottomDiv{
+  display: flex;
+  gap: 5px;
+}
+.symbolBrandNameBottomEveryDiv{
+  background-color: #e6fae6;
+  border-radius: 40px;
+  padding: 5px;
+  font-size: 0.7rem;
+}
+.symbolLTP{
+  font-weight: bold;
+}
+.symbolGraphIMGDiv{
+  position: relative;
+}
+.symbolGraphIMG{
+  width: 50%;
+  height: 20%;
+}
+.symbolImage{
+  width: 2%;
+}
+.symbolMomentum{
+  padding: 5px;
+  border-radius: 30px;
+  background-color: #e6fae6;
+  color: #54ba6a;
+}
